@@ -1,0 +1,2105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sindhukavi Senthilkumar · Sustainable Finance Researcher</title>
+  <meta name="description"
+    content="Sindhukavi Senthilkumar — Sustainable Finance Researcher specialising in ESG integration, climate risk, and responsible capital allocation." />
+  <meta property="og:title" content="Sindhukavi Senthilkumar · Sustainable Finance Researcher" />
+  <meta property="og:description"
+    content="Gold Medal awardee researching ESG integration, climate risk, and sustainable financial systems." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sindhukavi Senthilkumar · Sustainable Finance Researcher" />
+  <meta name="twitter:description"
+    content="Gold Medal awardee researching ESG integration, climate risk, and sustainable financial systems." />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --cream: #f4f1ec;
+      --cream-dark: #ece8e0;
+      --green-dark: #1f3d2b;
+      --green-mid: #2e5c3f;
+      --green-light: #4a7c5e;
+      --green-pale: #d6e6db;
+      --charcoal: #1a1a18;
+      --text-body: #3a3a35;
+      --text-muted: #7a7a6e;
+      --white: #ffffff;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* offset anchor targets so fixed nav doesn't cover them */
+    section[id] {
+      scroll-margin-top: 80px;
+    }
+
+    body {
+      background-color: var(--cream);
+      color: var(--charcoal);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.4rem 6vw;
+      background: rgba(244, 241, 236, 0.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(31, 61, 43, 0.08);
+    }
+
+    .nav-logo {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      letter-spacing: 0.04em;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2.4rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-body);
+      transition: color 0.25s;
+    }
+
+    .nav-links a:hover {
+      color: var(--green-dark);
+    }
+
+    .nav-links a.active {
+      color: var(--green-dark);
+      font-weight: 500;
+    }
+
+    .nav-links a.active::after {
+      content: '';
+      display: block;
+      height: 2px;
+      background: var(--green-dark);
+      border-radius: 2px;
+      margin-top: 2px;
+    }
+
+    /* hamburger */
+    #hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    #hamburger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--green-dark);
+      border-radius: 2px;
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    #hamburger[aria-expanded="true"] span:nth-child(1) {
+      transform: translateY(6.5px) rotate(45deg);
+    }
+
+    #hamburger[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0;
+    }
+
+    #hamburger[aria-expanded="true"] span:nth-child(3) {
+      transform: translateY(-6.5px) rotate(-45deg);
+    }
+
+    @media (max-width: 820px) {
+      #hamburger {
+        display: flex;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(244, 241, 236, 0.98);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(31, 61, 43, 0.1);
+        padding: 0;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .nav-links li {
+        border-bottom: 1px solid rgba(31, 61, 43, 0.06);
+      }
+
+      .nav-links a {
+        display: block;
+        padding: 1rem 6vw;
+        font-size: 0.9rem;
+      }
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 8rem 6vw 5rem;
+      gap: 4rem;
+    }
+
+    .hero-left {
+      max-width: 560px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--green-pale);
+      color: var(--green-dark);
+      font-size: 0.78rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      padding: 0.4rem 1rem;
+      border-radius: 100px;
+      margin-bottom: 2rem;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--green-dark);
+    }
+
+    .hero-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(3rem, 6vw, 5rem);
+      font-weight: 300;
+      line-height: 1.05;
+      color: var(--green-dark);
+      margin-bottom: 1.6rem;
+    }
+
+    .hero-bio {
+      font-size: 1rem;
+      color: var(--text-body);
+      line-height: 1.8;
+      margin-bottom: 2.4rem;
+      max-width: 440px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 2.8rem;
+    }
+
+    .hero-tag {
+      background: transparent;
+      border: 1px solid var(--green-light);
+      color: var(--green-mid);
+      font-size: 0.75rem;
+      padding: 0.3rem 0.85rem;
+      border-radius: 100px;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .btn-primary {
+      background: var(--green-dark);
+      color: var(--white);
+      padding: 0.85rem 2rem;
+      border-radius: 100px;
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      transition: background 0.25s, transform 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: var(--green-mid);
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--green-dark);
+      padding: 0.85rem 2rem;
+      border-radius: 100px;
+      border: 1.5px solid var(--green-dark);
+      font-size: 0.82rem;
+      font-weight: 400;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      transition: background 0.25s, color 0.25s;
+    }
+
+    .btn-outline:hover {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    .hero-right {
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .hero-photo-wrap {
+      width: 420px;
+      height: 520px;
+      border-radius: 16px;
+      background: var(--green-pale);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(31, 61, 43, 0.12);
+    }
+
+    .hero-photo-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .photo-placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--green-mid);
+      gap: 0.6rem;
+      font-size: 0.82rem;
+      letter-spacing: 0.05em;
+    }
+
+    .photo-placeholder svg {
+      opacity: 0.4;
+    }
+
+    .hero-stat-cards {
+      position: absolute;
+      bottom: 1.5rem;
+      left: 1.5rem;
+      right: 1.5rem;
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .stat-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(8px);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      flex: 1;
+      border: 1px solid rgba(255, 255, 255, 0.6);
+    }
+
+    .stat-card-label {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .stat-card-value {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.3rem;
+      color: var(--green-dark);
+      font-weight: 500;
+    }
+
+    /* ── SECTION BASE ── */
+    section {
+      padding: 6rem 6vw;
+    }
+
+    section:nth-child(even) {
+      background: var(--cream-dark);
+    }
+
+    .section-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      font-weight: 500;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 400;
+      color: var(--green-dark);
+      line-height: 1.15;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-header {
+      display: flex;
+      gap: 5rem;
+      align-items: flex-start;
+      margin-bottom: 4rem;
+    }
+
+    .section-header-text {
+      flex: 1;
+    }
+
+    .section-header-photo {
+      width: 220px;
+      height: 260px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      background: var(--green-pale);
+      overflow: hidden;
+      border: 1px solid rgba(31, 61, 43, 0.1);
+    }
+
+    .section-header-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ── ABOUT ── */
+    #about .about-grid {
+      display: grid;
+      grid-template-columns: 0.6fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .about-photo {
+      width: 100%;
+      max-width: 400px;
+      aspect-ratio: 3/4;
+      border-radius: 16px;
+      background: var(--green-pale);
+      overflow: hidden;
+      border: 1px solid rgba(31, 61, 43, 0.1);
+      margin: 0 auto;
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .about-highlights {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 2rem;
+    }
+
+    .highlight-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      padding: 1.2rem 1.4rem;
+      background: var(--white);
+      border-radius: 12px;
+      border: 1px solid rgba(31, 61, 43, 0.07);
+    }
+
+    .highlight-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--green-dark);
+      margin-top: 0.55rem;
+      flex-shrink: 0;
+    }
+
+    .highlight-item h4 {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    .highlight-item p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ── CARDS GRID ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 2rem;
+      border: 1px solid rgba(31, 61, 43, 0.08);
+      transition: transform 0.25s, box-shadow 0.25s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 36px rgba(31, 61, 43, 0.1);
+    }
+
+    .card-photo {
+      width: 100%;
+      height: 180px;
+      border-radius: 10px;
+      background: var(--green-pale);
+      overflow: hidden;
+      margin-bottom: 1.4rem;
+      border: 1px solid rgba(31, 61, 43, 0.08);
+    }
+
+    .card-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-tag {
+      display: inline-block;
+      background: var(--green-pale);
+      color: var(--green-dark);
+      font-size: 0.68rem;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.7rem;
+      border-radius: 100px;
+      margin-bottom: 0.9rem;
+    }
+
+    .card h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .card p {
+      font-size: 0.85rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    .card-meta {
+      margin-top: 1rem;
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .card-meta span {
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* ── PUBLICATIONS ── */
+    .pub-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .pub-item {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 2rem 2.2rem;
+      border: 1px solid rgba(31, 61, 43, 0.08);
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 1rem;
+      align-items: start;
+      transition: transform 0.2s;
+    }
+
+    .pub-item:hover {
+      transform: translateX(4px);
+    }
+
+    .pub-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 3rem;
+      font-weight: 300;
+      color: var(--green-pale);
+      line-height: 1;
+      user-select: none;
+    }
+
+    .pub-content {
+      display: flex;
+      gap: 1.8rem;
+      align-items: flex-start;
+    }
+
+    .pub-content-text {
+      flex: 1;
+    }
+
+    .pub-content-text h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      margin-bottom: 0.4rem;
+      line-height: 1.35;
+    }
+
+    .pub-content-text p {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .pub-content-photo {
+      width: 90px;
+      height: 90px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: var(--green-pale);
+      overflow: hidden;
+      border: 1px solid rgba(31, 61, 43, 0.1);
+    }
+
+    .pub-content-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .pub-year {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      background: var(--cream-dark);
+      padding: 0.3rem 0.8rem;
+      border-radius: 100px;
+      white-space: nowrap;
+    }
+
+    /* ── LEADERSHIP ── */
+    .leadership-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .leadership-item {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 1.8rem 2rem;
+      border: 1px solid rgba(31, 61, 43, 0.08);
+      display: flex;
+      gap: 2rem;
+      align-items: flex-start;
+      transition: transform 0.2s;
+    }
+
+    .leadership-item:hover {
+      transform: translateX(4px);
+    }
+
+    .leadership-photo {
+      width: 80px;
+      height: 80px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      background: var(--green-pale);
+      overflow: hidden;
+      border: 1px solid rgba(31, 61, 43, 0.1);
+    }
+
+    .leadership-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .leadership-content {
+      flex: 1;
+    }
+
+    .leadership-content h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.2rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    .leadership-content .org {
+      font-size: 0.82rem;
+      color: var(--green-mid);
+      font-weight: 400;
+      margin-bottom: 0.5rem;
+    }
+
+    .leadership-content p {
+      font-size: 0.83rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    .leadership-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: var(--cream-dark);
+      padding: 0.3rem 0.8rem;
+      border-radius: 100px;
+      white-space: nowrap;
+      align-self: flex-start;
+    }
+
+    /* ── EMCEE ── */
+    .emcee-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .emcee-card {
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      border: 1px solid rgba(31, 61, 43, 0.08);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .emcee-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 36px rgba(31, 61, 43, 0.1);
+    }
+
+    .emcee-photo {
+      width: 100%;
+      height: 200px;
+      background: var(--green-pale);
+      overflow: hidden;
+    }
+
+    .emcee-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .emcee-card-body {
+      padding: 1.5rem 1.8rem;
+    }
+
+    .emcee-card-body h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      margin-bottom: 0.4rem;
+    }
+
+    .emcee-card-body p {
+      font-size: 0.82rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    .emcee-card-body .card-meta {
+      margin-top: 0.8rem;
+    }
+
+    /* ── INTERNSHIPS ── */
+    .internship-timeline {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      position: relative;
+      padding-left: 2.5rem;
+    }
+
+    .internship-timeline::before {
+      content: '';
+      position: absolute;
+      left: 0.6rem;
+      top: 0.5rem;
+      bottom: 0.5rem;
+      width: 1px;
+      background: var(--green-pale);
+    }
+
+    .internship-item {
+      position: relative;
+      padding-bottom: 2.5rem;
+    }
+
+    .internship-item::before {
+      content: '';
+      position: absolute;
+      left: -2.1rem;
+      top: 0.55rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--green-dark);
+      border: 2px solid var(--cream);
+      box-shadow: 0 0 0 2px var(--green-dark);
+    }
+
+    .internship-card {
+      background: var(--white);
+      border-radius: 14px;
+      padding: 1.8rem 2rem;
+      border: 1px solid rgba(31, 61, 43, 0.08);
+      display: flex;
+      gap: 1.8rem;
+      align-items: flex-start;
+    }
+
+    .internship-photo {
+      width: 70px;
+      height: 70px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background: var(--green-pale);
+      overflow: hidden;
+      border: 1px solid rgba(31, 61, 43, 0.1);
+    }
+
+    .internship-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .internship-content h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    .internship-content .company {
+      font-size: 0.82rem;
+      color: var(--green-mid);
+      margin-bottom: 0.5rem;
+    }
+
+    .internship-content p {
+      font-size: 0.83rem;
+      color: var(--text-body);
+      line-height: 1.7;
+    }
+
+    .internship-date {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      background: var(--cream-dark);
+      padding: 0.3rem 0.8rem;
+      border-radius: 100px;
+      white-space: nowrap;
+      align-self: flex-start;
+    }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--green-dark);
+      color: var(--white);
+    }
+
+    #contact .section-label {
+      color: var(--green-pale);
+    }
+
+    #contact .section-title {
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: start;
+    }
+
+    .contact-info p {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 2rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    .contact-link {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      color: rgba(255, 255, 255, 0.8);
+      font-size: 0.85rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .contact-link:hover {
+      color: var(--white);
+    }
+
+    .contact-link-icon {
+      width: 36px;
+      height: 36px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .form-group label {
+      font-size: 0.75rem;
+      color: rgba(255, 255, 255, 0.6);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      padding: 0.85rem 1.1rem;
+      color: var(--white);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.88rem;
+      font-weight: 300;
+      outline: none;
+      transition: border-color 0.2s;
+      resize: none;
+    }
+
+    .form-group input::placeholder,
+    .form-group textarea::placeholder {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      border-color: rgba(255, 255, 255, 0.4);
+    }
+
+    .btn-send {
+      background: var(--white);
+      color: var(--green-dark);
+      border: none;
+      padding: 0.95rem 2.2rem;
+      border-radius: 100px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      align-self: flex-start;
+      transition: background 0.2s, transform 0.2s;
+    }
+
+    .btn-send:hover {
+      background: var(--green-pale);
+      transform: translateY(-1px);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--green-dark);
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1.8rem 6vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    footer p {
+      font-size: 0.78rem;
+      color: rgba(255, 255, 255, 0.4);
+    }
+
+    /* ── PLACEHOLDER HELPER ── */
+    .ph {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: var(--green-mid);
+      gap: 0.4rem;
+      font-size: 0.72rem;
+      letter-spacing: 0.05em;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .ph svg {
+      opacity: 0.35;
+      margin-bottom: 0.2rem;
+    }
+
+    /* ── ANIMATIONS ── */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      #hero {
+        grid-template-columns: 1fr;
+        padding-top: 6rem;
+      }
+
+      .hero-right {
+        justify-content: flex-start;
+      }
+
+      .hero-photo-wrap {
+        width: 100%;
+        max-width: 380px;
+        height: 420px;
+      }
+
+      #about .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+
+      .section-header {
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .section-header-photo {
+        width: 180px;
+        height: 220px;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        padding: 1rem 5vw;
+      }
+
+      .nav-links {
+        display: none;
+      }
+
+      section {
+        padding: 4rem 5vw;
+      }
+
+      .pub-content {
+        flex-direction: column;
+      }
+
+      .pub-content-photo {
+        width: 100%;
+        height: 140px;
+      }
+    }
+
+    /* ── SCROLL PROGRESS ── */
+    #scroll-progress {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      z-index: 200;
+      background: linear-gradient(90deg, var(--green-mid), var(--green-light));
+      width: 0%;
+      transition: width 0.1s linear;
+    }
+
+    /* ── BACK TO TOP ── */
+    #back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 150;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--green-dark);
+      color: var(--white);
+      border: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      box-shadow: 0 4px 16px rgba(31, 61, 43, 0.25);
+      transition: opacity 0.3s, transform 0.3s;
+      font-size: 1.1rem;
+    }
+
+    #back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #back-to-top:hover {
+      transform: translateY(-3px);
+    }
+
+    /* ── THEME TOGGLE ── */
+    #theme-toggle {
+      background: none;
+      border: 1.5px solid rgba(31, 61, 43, 0.2);
+      border-radius: 100px;
+      padding: 0.35rem 0.85rem;
+      cursor: pointer;
+      font-size: 0.75rem;
+      color: var(--text-body);
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: border-color 0.2s, color 0.2s;
+      font-family: 'DM Sans', sans-serif;
+      white-space: nowrap;
+    }
+
+    #theme-toggle:hover {
+      border-color: var(--green-dark);
+      color: var(--green-dark);
+    }
+
+    /* ── DARK MODE ── */
+    body.dark {
+      --cream: #111714;
+      --cream-dark: #181c19;
+      --green-pale: #1e3028;
+      --charcoal: #e4e4dd;
+      --text-body: #b8b8b0;
+      --text-muted: #787870;
+      --white: #1a1e1b;
+    }
+
+    body.dark nav {
+      background: rgba(17, 23, 20, 0.95);
+    }
+
+    body.dark .card,
+    body.dark .pub-item,
+    body.dark .leadership-item,
+    body.dark .internship-card,
+    body.dark .emcee-card,
+    body.dark .highlight-item,
+    body.dark .edu-card,
+    body.dark .skill-category {
+      background: #1e2420;
+    }
+
+    body.dark .stat-card {
+      background: rgba(30, 36, 32, 0.9);
+    }
+
+    /* ── OPEN BADGE ── */
+    .open-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(74, 124, 94, 0.1);
+      border: 1px solid rgba(74, 124, 94, 0.25);
+      color: var(--green-mid);
+      font-size: 0.75rem;
+      padding: 0.35rem 0.9rem;
+      border-radius: 100px;
+      margin-bottom: 1rem;
+    }
+
+    .open-badge-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #4caf7d;
+      box-shadow: 0 0 0 3px rgba(76, 175, 125, 0.2);
+      animation: pulse-dot 2s infinite;
+      flex-shrink: 0;
+    }
+
+    @keyframes pulse-dot {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 3px rgba(76, 175, 125, 0.2);
+      }
+
+      50% {
+        box-shadow: 0 0 0 7px rgba(76, 175, 125, 0.05);
+      }
+    }
+
+    /* ── EDUCATION ── */
+    .edu-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .edu-card {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 2rem;
+      border: 1px solid rgba(31, 61, 43, 0.08);
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+
+    .edu-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 36px rgba(31, 61, 43, 0.1);
+    }
+
+    .edu-card-header {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .edu-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 12px;
+      background: var(--green-pale);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--green-dark);
+    }
+
+    .edu-card-text h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-weight: 500;
+      color: var(--green-dark);
+      margin-bottom: 0.2rem;
+    }
+
+    .edu-inst {
+      font-size: 0.82rem;
+      color: var(--green-mid);
+      margin-bottom: 0.4rem;
+    }
+
+    .edu-date {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      background: var(--cream-dark);
+      padding: 0.2rem 0.7rem;
+      border-radius: 100px;
+      display: inline-block;
+    }
+
+    .edu-card p {
+      font-size: 0.83rem;
+      color: var(--text-body);
+      line-height: 1.7;
+      margin-top: 0.8rem;
+    }
+
+    .edu-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: var(--green-pale);
+      color: var(--green-dark);
+      font-size: 0.72rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 100px;
+      margin-top: 0.75rem;
+      font-weight: 500;
+    }
+
+    /* ── SKILLS ── */
+    .skills-wrapper {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .skill-category {
+      background: var(--white);
+      border-radius: 16px;
+      padding: 1.8rem;
+      border: 1px solid rgba(31, 61, 43, 0.08);
+    }
+
+    .skill-category h4 {
+      font-size: 0.73rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--green-mid);
+      font-weight: 500;
+      margin-bottom: 1rem;
+    }
+
+    .skill-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-tag {
+      background: var(--green-pale);
+      color: var(--green-dark);
+      font-size: 0.78rem;
+      padding: 0.3rem 0.85rem;
+      border-radius: 100px;
+    }
+
+    @media (max-width:820px) {
+      #theme-toggle {
+        font-size: 0.7rem;
+        padding: 0.3rem 0.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a href="#hero" class="nav-logo">S.S.</a>
+    <div style="display:flex;align-items:center;gap:0.8rem;">
+      <button id="theme-toggle" aria-label="Toggle dark mode">🌙 Dark</button>
+      <button id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#publications">Publications</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#emcee">Emcee</a></li>
+      <li><a href="#internships">Internships</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-left fade-up">
+      <div class="open-badge"><span class="open-badge-dot"></span>Open to Research Collaborations</div>
+      <div class="hero-badge">Sustainable Finance Researcher</div>
+      <h1 class="hero-name">Sindhukavi<br>Senthilkumar</h1>
+      <p class="hero-bio">An emerging researcher focused on ESG integration, climate risk, and responsible capital
+        allocation ,building sustainable financial systems for future generations.</p>
+      <div class="hero-tags">
+        <span class="hero-tag">ESG Integration</span>
+        <span class="hero-tag">Climate Risk</span>
+        <span class="hero-tag">Sustainable Finance</span>
+        <span class="hero-tag">Oil & Gas Sector</span>
+      </div>
+      <div class="hero-btns">
+        <a href="#research" class="btn-primary">View Research</a>
+        <a href="#contact" class="btn-outline">Connect With Me</a>
+        <a href="./assets/Sindhukavi Senthilkumar_Resume.pdf" download class="btn-outline"
+          style="border-color:var(--green-light);color:var(--green-light);">&#8659; CV</a>
+      </div>
+    </div>
+    <div class="hero-right fade-up" style="transition-delay:0.15s">
+      <div class="hero-photo-wrap">
+        <!-- Replace with: <img src="your-photo.jpg" alt="Sindhukavi Senthilkumar"> -->
+        <img src="./assets/hero_portrait.jpeg" alt="Profile" />
+        <div class="hero-stat-cards">
+          <div class="stat-card">
+            <div class="stat-card-label">Award</div>
+            <div class="stat-card-value">🏅 Gold</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-label">Exchange</div>
+            <div class="stat-card-value">🇳🇱 NL</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-card-label">Focus</div>
+            <div class="stat-card-value">ESG</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="fade-up">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Researcher in ESG &amp; Sustainable Finance</h2>
+    </div>
+    <div class="about-grid fade-up" style="transition-delay:0.1s">
+      <div class="about-photo">
+        <img src="./assets/about_portrait.png?v=2" alt="Profile" />
+      </div>
+      <div>
+        <p style="font-size:1.05rem;color:var(--text-body);line-height:1.9;margin-bottom:2rem;">
+          A Gold Medal awardee in BBA Financial Services from Woxsen University with deep research interests in ESG
+          integration, sustainable finance, and environmental risk assessment. My work sits at the intersection of
+          finance and sustainability, exploring how capital can drive real-world environmental change.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-item">
+            <div class="highlight-dot"></div>
+            <div>
+              <h4>Thesis Research</h4>
+              <p>ESG's moderating role on financial leverage in the oil and gas sector, examining how sustainability
+                integration shapes corporate financial behaviour.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-dot"></div>
+            <div>
+              <h4>International Experience</h4>
+              <p>Exchange semester at The Hague University of Applied Sciences, Netherlands, broadening my perspective
+                on global sustainable finance frameworks.</p>
+            </div>
+          </div>
+          <div class="highlight-item">
+            <div class="highlight-dot"></div>
+            <div>
+              <h4>Core Passion</h4>
+              <p>Building sustainable financial systems that serve future generations, connecting rigorous research to
+                meaningful real-world impact.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PUBLICATIONS -->
+  <section id="publications">
+    <div class="fade-up">
+      <div class="section-label">Publications</div>
+      <h2 class="section-title">Research & Writing</h2>
+    </div>
+    <div class="pub-list fade-up" style="transition-delay:0.1s">
+
+      <div class="pub-item">
+        <div class="pub-content">
+          <div class="pub-content-photo">
+            <img src="https://images.unsplash.com/photo-1589829085413-56de8ae18c73?auto=format&fit=crop&w=400&q=80"
+              alt="Book 1" />
+          </div>
+          <div class="pub-content-text">
+            <div class="card-tag">Book Chapter</div>
+            <h3>Corporate Reputation and Reaction in Developing Risk Frameworks</h3>
+            <p>Sindhukavi Senthilkumar & Padmaja Bhujabal</p>
+            <p style="margin-top:0.4rem;font-size:0.8rem;"><a
+                href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781032644165-3/corporate-reputation-reaction-developing-risk-frameworks-sindhukavi-senthilkumar-padmaja-bhujabal"
+                target="_blank" style="color:var(--green-mid);text-decoration:none;">View Publication ↗</a></p>
+          </div>
+        </div>
+        <div class="pub-year">2024</div>
+      </div>
+
+      <div class="pub-item">
+        <div class="pub-content">
+          <div class="pub-content-photo">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80"
+              alt="Book 2" />
+          </div>
+          <div class="pub-content-text">
+            <div class="card-tag">Book Chapter</div>
+            <h3>Environmental Imperatives in Financial Decision-Making</h3>
+            <p>Sindhukavi Senthilkumar</p>
+            <p style="margin-top:0.4rem;font-size:0.8rem;"><a href="https://lnkd.in/d-XKdgDc" target="_blank"
+                style="color:var(--green-mid);text-decoration:none;">View Publication ↗</a></p>
+          </div>
+        </div>
+        <div class="pub-year">2025</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- LEADERSHIP -->
+  <section id="leadership">
+    <div class="fade-up">
+      <div class="section-label">Leadership</div>
+      <h2 class="section-title">Roles & Impact</h2>
+    </div>
+    <div class="leadership-list fade-up" style="transition-delay:0.1s">
+
+      <div class="leadership-item">
+        <div class="leadership-photo">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=400&q=80"
+            alt="Event" />
+        </div>
+        <div class="leadership-content">
+          <h3>Secretary</h3>
+          <div class="org">Rotaract, Woxsen University</div>
+          <p>Managed external affairs and vendor partnerships, handled logistics and transportation for club events, and
+            built stakeholder relationships for community outreach.</p>
+        </div>
+        <div class="leadership-date">Jul 2024 – Mar 2025</div>
+      </div>
+
+      <div class="leadership-item">
+        <div class="leadership-photo">
+          <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=80"
+            alt="Event" />
+        </div>
+        <div class="leadership-content">
+          <h3>Divisional President</h3>
+          <div class="org">Street Cause, Woxsen University</div>
+          <p>Led daily fundraising drives (raised ₹20,000), organised a stationery distribution drive for
+            underprivileged students, and managed volunteer recruitment and expansion.</p>
+        </div>
+        <div class="leadership-date">Sep – Dec 2023</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- RESEARCH PROJECTS -->
+  <section id="research">
+    <div class="fade-up">
+      <div class="section-label">Research Projects</div>
+      <h2 class="section-title">Investigations & Findings</h2>
+    </div>
+    <div class="cards-grid fade-up" style="transition-delay:0.1s">
+
+      <div class="card">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?auto=format&fit=crop&w=600&q=80"
+            alt="Research" />
+        </div>
+        <div class="card-tag">CSR Capstone</div>
+        <h3>Environmental Crises in the Oil & Gas Sector</h3>
+        <p>Team-led analysis of major industrial accidents, covering causes, impacts, and response strategies.
+          Integrated crisis management, regulatory challenges, sustainability, and ESG considerations.</p>
+        <p style="margin-top:1rem;font-size:0.85rem;"><a href="./assets/Environmental_Crises_Oil_Gas.docx"
+            target="_blank" style="color:var(--green-mid);text-decoration:none;font-weight:600;">📥 View Report
+            (DOCX)</a></p>
+        <div class="card-meta">
+          <span>📉 Case Study</span>
+          <span>📊 Qualitative Analysis</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?auto=format&fit=crop&w=600&q=80"
+            alt="Research" />
+        </div>
+        <div class="card-tag">Equity Research</div>
+        <h3>Suzlon Energy Ltd.</h3>
+        <p>Co-authored a sell-side equity research report with a BUY recommendation using DCF valuation, P/E and
+          EV/EBITDA multiples, fundamental analysis, and industry benchmarking.</p>
+        <p style="margin-top:1rem;font-size:0.85rem;"><a href="./assets/Suzlon_Equity_Research.pdf" target="_blank"
+            style="color:var(--green-mid);text-decoration:none;font-weight:600;">📥 View Report (PDF)</a></p>
+        <div class="card-meta">
+          <span>📈 DCF Valuation</span>
+          <span>🏦 Fundamental Analysis</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-photo">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=600&q=80"
+            alt="Research" />
+        </div>
+        <div class="card-tag">ESG Research</div>
+        <h3>ESG Moderation in Oil & Gas Financial Leverage</h3>
+        <p>BBA Thesis quantitative research examining how ESG integration moderates financial leverage decisions across
+          the oil and gas sector (Debt-to-Equity and Interest Coverage Ratio).</p>
+        <p style="margin-top:1rem;font-size:0.85rem;"><a href="./assets/ESG_Moderation_Thesis.docx" target="_blank"
+            style="color:var(--green-mid);text-decoration:none;font-weight:600;">📥 View Thesis (DOCX)</a></p>
+        <div class="card-meta">
+          <span>📊 Quantitative</span>
+          <span>🌍 Oil & Gas Sector</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EMCEE EXPERIENCE -->
+  <section id="emcee">
+    <div class="fade-up">
+      <div class="section-label">Emcee Experience</div>
+      <h2 class="section-title">On Stage</h2>
+    </div>
+    <div class="emcee-grid fade-up" style="transition-delay:0.1s">
+
+      <div class="emcee-card">
+        <div class="emcee-photo">
+          <img src="./assets/infinity_event.png" alt="Infinity Event" />
+        </div>
+        <div class="emcee-card-body">
+          <div class="card-tag">Flagship Event</div>
+          <h3>Infinity</h3>
+          <p>Woxsen's largest flagship event featuring a DJ and concert. Hosted the main stage and kept the energy high
+            throughout.</p>
+          <div class="card-meta"><span>📍 Woxsen University</span><span>🗓 2025</span></div>
+        </div>
+      </div>
+
+      <div class="emcee-card">
+        <div class="emcee-photo">
+          <img src="./assets/woxsenentation.png" alt="Woxsenentation Event" />
+        </div>
+        <div class="emcee-card-body">
+          <div class="card-tag">Orientation</div>
+          <h3>BBA Orientation</h3>
+          <p>Hosted the 3-day university orientation programme guiding 400+ new students and facilitating sessions.</p>
+          <div class="card-meta"><span>📍 Woxsen University</span><span>🗓 2024–25</span></div>
+        </div>
+      </div>
+
+      <div class="emcee-card">
+        <div class="emcee-photo">
+          <img src="./assets/marketing_director.png" alt="Marketing Director Event" />
+        </div>
+        <div class="emcee-card-body">
+          <div class="card-tag">Competition</div>
+          <h3>Marketing Director's Student of the Year</h3>
+          <p>Hosted 2 days of this 3-day flagship competition featuring over 200 participants from across the
+            university.</p>
+          <div class="card-meta"><span>📍 Woxsen University</span><span>🗓 2024–25</span></div>
+        </div>
+      </div>
+
+      <div class="emcee-card">
+        <div class="emcee-photo">
+          <img src="./assets/wmcl_auction.png" alt="WMCL Auction" />
+        </div>
+        <div class="emcee-card-body">
+          <div class="card-tag">Sports Event</div>
+          <h3>WMCL Auctioneer</h3>
+          <p>Served as the lead Auctioneer for the Woxsen Men's Cricket League, driving bids and managing the player
+            draft.</p>
+          <div class="card-meta"><span>📍 Woxsen University</span><span>🗓 2025</span></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERNSHIPS -->
+  <section id="internships">
+    <div class="fade-up">
+      <div class="section-label">Internships</div>
+      <h2 class="section-title">Professional Experience</h2>
+    </div>
+    <div class="internship-timeline fade-up" style="transition-delay:0.1s">
+
+      <div class="internship-item">
+        <div class="internship-card">
+          <div class="internship-photo">
+            <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=400&q=80"
+              alt="Office" />
+          </div>
+          <div class="internship-content">
+            <h3>Online Business Consultant</h3>
+            <div class="company">H2OTEL (Rotterdam, Netherlands) · Internship</div>
+            <p>Delivered DESTEP analysis, market research, website UX recommendations, marketing strategy review, and
+              SEO/on-page optimisation.</p>
+          </div>
+          <div class="internship-date">Apr – Jun 2024</div>
+        </div>
+      </div>
+
+      <div class="internship-item">
+        <div class="internship-card">
+          <div class="internship-photo">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=400&q=80"
+              alt="Documents" />
+          </div>
+          <div class="internship-content">
+            <h3>Documentation Intern</h3>
+            <div class="company">Isha Outreach (Coimbatore, India) · Internship</div>
+            <p>Proofread and prepared formal documents (AGM reviews, bank records), researched Fairtrade Certification
+              processes, and organised internal records.</p>
+          </div>
+          <div class="internship-date">May – Jun 2023</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="fade-up">
+      <div class="section-label">Education</div>
+      <h2 class="section-title">Academic Background</h2>
+    </div>
+    <div class="edu-grid fade-up" style="transition-delay:0.1s">
+
+      <div class="edu-card">
+        <div class="edu-card-header">
+          <div class="edu-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+          </div>
+          <div class="edu-card-text">
+            <h3>BBA in Financial Services</h3>
+            <div class="edu-inst">Woxsen University, Hyderabad</div>
+            <div class="edu-date">2021 – 2024</div>
+          </div>
+        </div>
+        <p>Specialisation in sustainable finance, ESG integration, and environmental risk assessment. Thesis research on
+          ESG moderation in the global oil &amp; gas sector.</p>
+        <div class="edu-badge">🥇 Gold Medal Awardee</div>
+      </div>
+
+      <div class="edu-card">
+        <div class="edu-card-header">
+          <div class="edu-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20" />
+            </svg>
+          </div>
+          <div class="edu-card-text">
+            <h3>International Exchange Semester</h3>
+            <div class="edu-inst">The Hague University of Applied Sciences, Netherlands</div>
+            <div class="edu-date">2023</div>
+          </div>
+        </div>
+        <p>Global sustainable finance frameworks, European ESG regulatory landscape, and responsible investment
+          strategies. Broadened perspective on international capital markets.</p>
+        <div class="edu-badge">🇳🇱 The Hague, Netherlands</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements">
+    <div class="fade-up">
+      <h2 class="section-title">Achievements</h2>
+    </div>
+    <div class="internship-timeline fade-up" style="transition-delay:0.1s">
+
+      <div class="internship-item">
+        <div class="internship-card">
+          <div class="internship-photo">
+            <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&w=400&q=80"
+              alt="Book 1" />
+          </div>
+          <div class="internship-content">
+            <h3>Published First Book Chapter</h3>
+            <div class="company">Academic Publication</div>
+            <p>'Corporate Reputation and Reaction in Developing Risk Frameworks'</p>
+          </div>
+          <div class="internship-date">2024</div>
+        </div>
+      </div>
+
+      <div class="internship-item">
+        <div class="internship-card">
+          <div class="internship-photo" style="background:transparent; border:none; border-radius:12px;">
+            <img src="./assets/gold_medal_deans_list.png" alt="Best Student for Research Inclination"
+              style="border-radius:12px; object-fit: contain; background: black;" />
+          </div>
+          <div class="internship-content">
+            <h3>Best Student for Research Inclination</h3>
+            <div class="company">Academic Excellence</div>
+            <p>Recognised as the best student for demonstrating a strong inclination and commitment to academic
+              research.</p>
+          </div>
+          <div class="internship-date">2025</div>
+        </div>
+      </div>
+
+      <div class="internship-item">
+        <div class="internship-card">
+          <div class="internship-photo" style="background:transparent; border:none; border-radius:12px;">
+            <img src="./assets/medal.jpg" alt="Gold Medal"
+              style="border-radius:12px; object-fit: contain; background: black;" />
+          </div>
+          <div class="internship-content">
+            <h3>Gold Medal & Dean's List</h3>
+            <div class="company">Academic Excellence</div>
+            <p>Awarded the prestigious Gold Medal. Additionally recognised and placed on the Dean's List for outstanding
+              academic performance.</p>
+          </div>
+          <div class="internship-date">2025</div>
+        </div>
+      </div>
+
+      <div class="internship-item">
+        <div class="internship-card">
+          <div class="internship-photo" style="background:transparent; border:none; border-radius:12px;">
+            <img src="./assets/book_chapter.png" alt="Book Chapter"
+              style="border-radius:12px; object-fit: contain; background: black;" />
+          </div>
+          <div class="internship-content">
+            <h3>Published Second Book Chapter</h3>
+            <div class="company">Academic Publication</div>
+            <p>'Environmental Imperatives in Financial Decision-Making'</p>
+          </div>
+          <div class="internship-date">2025</div>
+        </div>
+      </div>
+      <div class="internship-item">
+        <div class="internship-card">
+          <div class="internship-photo" style="background:transparent; border:none; border-radius:12px;">
+            <img src="./assets/best_student_inclination.png"
+              alt="School Topper" style="border-radius:12px; object-fit: contain; background: black;" />
+          </div>
+          <div class="internship-content">
+            <h3>AISSE School Topper & Multiple Subject Topper</h3>
+            <div class="company">Academic Excellence</div>
+            <p>Achieved top rank across the school in the All India Secondary School Examination.</p>
+          </div>
+          <div class="internship-date">2022</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="fade-up">
+      <div class="section-label">Skills &amp; Tools</div>
+      <h2 class="section-title">Research Toolkit</h2>
+    </div>
+    <div class="skills-wrapper fade-up" style="transition-delay:0.1s">
+
+      <div class="skill-category">
+        <h4>Research &amp; Analysis</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Stata</span>
+          <span class="skill-tag">R Studio</span>
+          <span class="skill-tag">SPSS</span>
+          <span class="skill-tag">Regression Analysis</span>
+          <span class="skill-tag">Panel Data</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h4>Finance &amp; ESG</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Bloomberg</span>
+          <span class="skill-tag">ESG Reporting</span>
+          <span class="skill-tag">Climate Risk</span>
+          <span class="skill-tag">Financial Modelling</span>
+          <span class="skill-tag">TCFD</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h4>Productivity</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Excel</span>
+          <span class="skill-tag">PowerPoint</span>
+          <span class="skill-tag">LaTeX</span>
+          <span class="skill-tag">Zotero</span>
+          <span class="skill-tag">Notion</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h4>Soft Skills</h4>
+        <div class="skill-tags">
+          <span class="skill-tag">Public Speaking</span>
+          <span class="skill-tag">Research Communication</span>
+          <span class="skill-tag">Emcee</span>
+          <span class="skill-tag">Leadership</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="fade-up">
+      <div class="section-label">Contact</div>
+      <h2 class="section-title">Let's Connect</h2>
+    </div>
+    <div class="contact-grid fade-up" style="transition-delay:0.1s">
+      <div class="contact-info">
+        <p>Whether you're interested in collaborative research, speaking opportunities, or just want to discuss
+          sustainable finance — I'd love to hear from you.</p>
+        <div class="contact-links">
+          <a href="mailto:sindhukavisenthilkumar@gmail.com" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="2" y="4" width="20" height="16" rx="2" />
+                <polyline points="2,4 12,13 22,4" />
+              </svg>
+            </div>
+            sindhukavisenthilkumar@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/sindhukavi/" target="_blank" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                <rect x="2" y="9" width="4" height="12" />
+                <circle cx="4" cy="4" r="2" />
+              </svg>
+            </div>
+            linkedin.com/in/sindhukavi
+          </a>
+          <a href="https://share.google/2s71V0YCcdenCc6yJ" target="_blank" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                <path
+                  d="M12 14l6.16-3.42A12.08 12.08 0 0 1 18.77 17a11.95 11.95 0 0 1-6.77 2.06A11.95 11.95 0 0 1 5.23 17a12.08 12.08 0 0 1 .61-6.42L12 14z" />
+              </svg>
+            </div>
+            Google Scholar
+          </a>
+          <a href="https://www.researchgate.net/profile/Sindhu-Kavi-Senthil-Kumar" target="_blank" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <rect x="3" y="3" width="18" height="18" rx="3" />
+                <line x1="9" y1="9" x2="9" y2="15" />
+                <line x1="15" y1="9" x2="15" y2="15" />
+                <line x1="9" y1="12" x2="15" y2="12" />
+              </svg>
+            </div>
+            ResearchGate
+          </a>
+          <a href="https://orcid.org/0000-0000-0000-0000" target="_blank" class="contact-link">
+            <div class="contact-link-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="12" y1="8" x2="12" y2="16" />
+                <line x1="8" y1="12" x2="16" y2="12" />
+              </svg>
+            </div>
+            ORCID iD
+          </a>
+        </div>
+      </div>
+      <form class="contact-form" id="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="your@email.com">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" placeholder="Research collaboration, speaking...">
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea rows="5" placeholder="Tell me about your project or inquiry..."></textarea>
+        </div>
+        <button type="submit" class="btn-send">Send Message →</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <button id="back-to-top" aria-label="Back to top">&#8679;</button>
+  <footer>
+    <p>&copy; 2026 Sindhukavi Senthilkumar</p>
+    <p>Sustainable Finance Researcher</p>
+  </footer>
+
+  <script>
+    // ── Scroll progress bar ──
+    const bar = document.getElementById('scroll-progress');
+    const btt = document.getElementById('back-to-top');
+    window.addEventListener('scroll', () => {
+      const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+      bar.style.width = pct + '%';
+      btt.classList.toggle('visible', window.scrollY > 400);
+    }, { passive: true });
+    btt.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    // ── Dark mode toggle ──
+    const themeBtn = document.getElementById('theme-toggle');
+    const applyTheme = (dark) => {
+      document.body.classList.toggle('dark', dark);
+      themeBtn.textContent = dark ? '☀️ Light' : '🌙 Dark';
+      localStorage.setItem('theme', dark ? 'dark' : 'light');
+    };
+    applyTheme(localStorage.getItem('theme') === 'dark');
+    themeBtn.addEventListener('click', () => applyTheme(!document.body.classList.contains('dark')));
+
+    // ── Fade-up on scroll ──
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
+    setTimeout(() => {
+      document.querySelectorAll('#hero .fade-up').forEach(el => el.classList.add('visible'));
+    }, 100);
+
+    // ── Smooth scroll for all anchor links ──
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (!target) return;
+        e.preventDefault();
+        const top = target.getBoundingClientRect().top + window.scrollY - 80;
+        window.scrollTo({ top, behavior: 'smooth' });
+        navLinks.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // ── Active nav link on scroll ──
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-links a');
+    const activateNav = () => {
+      let current = '';
+      sections.forEach(sec => { if (window.scrollY >= sec.offsetTop - 120) current = sec.id; });
+      navItems.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + current));
+    };
+    window.addEventListener('scroll', activateNav, { passive: true });
+    activateNav();
+
+    // ── Mobile hamburger ──
+    hamburger.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', open);
+    });
+
+    // ── Contact form: validate then open mailto ──
+    const contactForm = document.getElementById('contact-form');
+    const sendBtn = contactForm.querySelector('.btn-send');
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const inputs = contactForm.querySelectorAll('input, textarea');
+      let valid = true;
+      inputs.forEach(i => {
+        i.style.borderColor = '';
+        if (!i.value.trim()) { i.style.borderColor = 'rgba(255,100,100,0.5)'; valid = false; }
+      });
+      if (!valid) return;
+      const name = contactForm.querySelector('input[type="text"]').value;
+      const email = contactForm.querySelector('input[type="email"]').value;
+      const subject = contactForm.querySelectorAll('input[type="text"]')[1]?.value || 'Enquiry';
+      const message = contactForm.querySelector('textarea').value;
+      const mailto = `mailto:your@email.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\n' + message)}`;
+      window.location.href = mailto;
+      sendBtn.textContent = 'Opening Email Client ✓';
+      sendBtn.disabled = true;
+      setTimeout(() => { sendBtn.textContent = 'Send Message →'; sendBtn.disabled = false; inputs.forEach(i => i.value = ''); }, 3000);
+    });
+  </script>
+</body>
+
+</html>
